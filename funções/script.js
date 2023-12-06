@@ -41,3 +41,47 @@ addEventListener('click', mostraConsole);
 addEventListener('click', function(){
     console.log('Oi')
 })
+
+// =============   FUNÇOES 2    =============
+
+function imc2(peso, altura) {
+    const imc = peso / (altura ** 2);
+    console.log(imc);
+    return `
+    seu peso: ${peso}kg 
+    sua altura: ${altura}cm
+    `;
+}
+
+imc2(20, 1.8);  // undefined
+
+console.log(imc2(80, 1.80)); // retorna o imc e undefined
+
+
+function terceiraIdade(idade) {
+    if (idade >= 60) {
+        console.log('É idoso');
+    }
+    console.log(idade)
+}
+terceiraIdade(60)
+
+function terceiraIdade(idade) {
+    if (typeof idade !== 'number' ) {
+        return 'Porfavor preencha um número!';
+    } else if (idade >= 60) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(terceiraIdade(60))
+
+
+
+
+function faltaVisitar(piasesVisitados) {
+    var totalPaises = 193;
+    return `faltam visita ${totalPaises - piasesVisitados} paises`;
+}
+
