@@ -173,12 +173,14 @@ addEventListener('click', function() {
 })
 
 // Corrija o erro abaixo
-// function precisoVisitar(piasesVisitados) {
-//     var totalPaises = 193;
-//     return `Ainda faltam ${totalPaises - piasesVisitados} paise para visitar`;
-// }
-// function jaVisitei(piasesVisitados) {
-//     return `Já visitei ${piasesVisitados} do total de ${totalPaises} paises`;
-// }
+function precisoVisitar(piasesVisitados) {
+    var totalPaises = 193;
+    return `Ainda faltam ${totalPaises - piasesVisitados} paise para visitar`;
+}
+function jaVisitei(piasesVisitados) {
+    return `Já visitei ${piasesVisitados} do total de ${totalPaises} paises`;
+}
 // precisoVisitar(29);
 // jaVisitei(20);
+
+// no meu funcionou sem erros mesmo a variavel estando dentro do bloco da function precisoVidistar()
