@@ -55,6 +55,7 @@ var dados = {
 }
 
 // Crie um método no objeto anterior, que mostre o seu nome completo
+
 dados.nomeCompleto = function() {
     return `${this.nome} ${this.sobrenome}`;
 }
@@ -68,3 +69,17 @@ var carro = {
 
 // Crie um objeto de um cachorro que represente um labrador,
 // preto com 10 anos, que late ao ver um homem
+
+var cachorro = {
+    raca: 'labrador',
+    cor: 'preto',
+    idade:10,
+    latir(humano) {
+        if(humano === 'Homem') {
+            return 'Latir';
+        } else {
+            return 'Nada'
+        }
+    }
+
+}
