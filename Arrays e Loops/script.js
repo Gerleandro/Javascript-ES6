@@ -13,7 +13,6 @@ while (i <= 10) {
 
 var videoGames = ['Switch', 'PS4', 'XBOX', '3DS'];
 
-for(var item = 0; item < 3; item++) {
-    console.log(item);
+for(var item = 0; item < videoGames.length; item++) {
+    console.log(videoGames[item]);
 }
-videoGames[0];
