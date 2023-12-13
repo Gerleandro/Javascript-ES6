@@ -11,3 +11,5 @@ while (i <= 10) {
     console.log(i);
     i++;
 }
+
+var videoGames = ['Switch', 'PS4', 'XBOX', '3DS'];
