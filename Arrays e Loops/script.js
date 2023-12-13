@@ -1,6 +1,5 @@
-var videoGames = ['Switch', 'PS4', 'XBOX'];
 
-var ultimoItem = videoGames.pop();
+// var ultimoItem = videoGames.pop();
 
 for (var numero = 0; numero <= 10; numero++) {
     console.log(numero);
@@ -13,3 +12,8 @@ while (i <= 10) {
 }
 
 var videoGames = ['Switch', 'PS4', 'XBOX', '3DS'];
+
+for(var item = 0; item < 3; item++) {
+    console.log(item);
+}
+videoGames[0];
