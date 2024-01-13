@@ -1,24 +1,24 @@
-const imgs = document.querySelectorAll('img');
+// const imgs = document.querySelectorAll('img');
 
-imgs.forEach(function(item,  index, array) {
+// imgs.forEach(function(item,  index, array) {/
     // console.log(item, index, array)
-})
+// })
 
-const titles = document.getElementsByClassName('title');
-const titlesArray = Array.from(titles);
+// const titles = document.getElementsByClassName('title');
+// const titlesArray = Array.from(titles);
 
 // console.log(titles);
 // console.log(titlesArray);
 
-titlesArray.forEach(function(item, index, array) {
+// titlesArray.forEach(function(item, index, array) {
     // console.log(item, index, array);
-});
+// });
 
 // imgs.forEach((item, index) => {
 //     console.log(item, index);
 // });
 
-let i = 0;
+// let i = 0;
 // imgs.forEach((item) => {
 //     console.log(i++);
 // });
@@ -30,24 +30,28 @@ let i = 0;
 
 // Mostre no console cada parágrafos do site
 const paragrafos = document.querySelectorAll('p');
-console.log(item);
+console.log(paragrafos);
 
 paragrafos.forEach((item) => {
     console.log(item);
 });
 
 // Mostre o texto dos parágrafos no console
+paragrafos.forEach((item) => {
+    	console.log(item.innerText);
+});
 
 // Como corrigir os erros abaixo:
-// const imgs = document.querySelectorAll('img');
+const imgs = document.querySelectorAll('img');
 
-// imgs.forEach(item, index => {
-    // console.log(item, index);
-// });
+imgs.forEach((item, index) => {
+    console.log(item, index);
+});
 
-// let i = 0; 
-// imgs.forEach( => {
-//     console.log(i++);
-// });
+let i = 0; 
+imgs.forEach(() => {
+    console.log(i++);
+});
 
-// imgs.forEach(() => i++);
+imgs.forEach(() => i++);
+console.log(i)
