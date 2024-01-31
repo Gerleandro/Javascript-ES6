@@ -68,14 +68,27 @@ function initScrollSuave() { // nao funcionou
 
 initScrollSuave();
 
+function initAnimationScroll() {
 
+    const sections = document.querySelectorAll('.js-scroll');
+    if (sections.length) {
+    const winScreenMid = window.innerHeight * 0.6;
 
-        // forma alternativa / nao funcionou
-        // const topo = section.offsetTop;
-        // window.scrollTo({
-        //     top: topo,
-        //     behavior: 'smooth',
-        // });
+    function animaScroll() {
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const isSectionVisible = (sectionTop - winScreenMid) < 0;
+            if(isSectionVisible) {
+                section.classList.add(activeClass);
+            } else {
+                section.classList.remove(activeClass);
+            }
+        });
+    }
 
+    animaScroll();
 
-       
+    window.addEventListener('scroll', animaScroll);
+    };
+};
+initAnimationScroll();
