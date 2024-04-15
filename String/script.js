@@ -45,5 +45,21 @@ frase2.repeat(5); // TaTaTaTaTa
 let listaItens = "Camisas Bonés Calças Bermudas Vestidos Saias";
 listaItens = listaItens.replace(/[ ]+/g, ', '); // add virgula entre palavras
 listaItens = listaItens.replace("Camisas","Shirts")
-console.log(listaItens)
 
+const arrayLista = listaItens.split("s, ")
+console.log(arrayLista)
+
+const htmlText = '<div>O melhor item</div><div>A melhor lista</div>';
+const htmlArray = htmlText.split('div');
+const novoHtml = htmlArray.join('section');
+
+console.log(htmlText);
+console.log(htmlArray);
+console.log(novoHtml)
+const frutasArray = ['Banana', 'Melancia', 'Laranja'];
+
+const sexo1 = "Feminino";
+const sexo2 = "feminino";
+const sexo3 = "FEMININO";
+
+console.log(sexo1.toUpperCase() === "FEMININO");
