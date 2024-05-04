@@ -58,6 +58,9 @@ console.log(carros)
 console.log(carros.reverse())
 
 
+
+// ============ ANOTAÇÕES =============
+
 // [].unshift() adiciona elementos ao inicio da array e retorna o length da mesma.
 // [].push() adiciona elementos ao final da array e retorna o length da mesma.
 // [].shift() remove o primeiro elemento da array e retorna o mesmo.
