@@ -48,14 +48,20 @@ carros.unshift('kia', 'Fearrari')
 
 const novaArray = carros.push('Parati', 'Gol');
 
-console.log(carros)
-console.log(novaArray)
+// console.log(carros)
+// console.log(novaArray)
+// console.log(carros.pop())
+// console.log(carros.shift())
+// console.log(carros)
+// console.log(carros.reverse())
 
-console.log(carros.pop())
-console.log(carros.shift())
+console.log(carros)
+console.log(carros.splice(2,0, 'Fusca'))
 console.log(carros)
 
-console.log(carros.reverse())
+
+
+
 
 
 
@@ -66,3 +72,9 @@ console.log(carros.reverse())
 // [].shift() remove o primeiro elemento da array e retorna o mesmo.
 // [].pop() remove o último elemento da array e retorna o mesmo.
 // [].reverse() inverte os itens da array e retorna a nova array.
+
+// [].splice(index, remover, iteml, item2, ...) adiciona valores na array a partir do index.
+// Remover a quantidade de itens que for passada no segund parâmetro (retorna esses itens).
+
+// [].copyWithin(alvo, inicio, final) a partir do algo, ele irá copiar a array começando do inicio ate o final e vai preencher a mesma com essa cópia. 
+// Caso omita os valores do inicio e final el irá utilizar como incio o 0 e final o valor total do array.
