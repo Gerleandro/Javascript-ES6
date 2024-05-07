@@ -58,10 +58,7 @@ const novaArray = carros.push('Parati', 'Gol');
 console.log(carros)
 console.log(carros.splice(2,0, 'Fusca'))
 console.log(carros)
-
 console.log(carros.copyWithin(3,2))
-
-
 
 
 
